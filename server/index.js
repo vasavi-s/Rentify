@@ -3,9 +3,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const propertyRoutes = require('./routes/propertyRoutes');
-const userRoutes = require('./routes/userRoutes');
-const auth = require('./middleware/auth');
+const propertyRoutes = require('./src/routes/propertyRoutes');
+const userRoutes = require('./src/routes/userRoutes');
+const auth = require('./src/middleware/auth');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
