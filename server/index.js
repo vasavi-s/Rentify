@@ -8,7 +8,7 @@ const userRoutes = require('./src/routes/userRoutes');
 const auth = require('./src/middleware/auth');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 const MONGODB_URI = 'mongodb+srv://admin:secret123@cluster0.1nvhidr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 app.use(cors(
