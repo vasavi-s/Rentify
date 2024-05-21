@@ -83,7 +83,7 @@ function PostProperty() {
       if (!token) {
         throw new Error('Authentication token not found. Please log in.');
       }
-      await axios.post('http://localhost:3001/properties', form
+      await axios.post('https://rentify-server-z0rv.onrender.com/properties', form
       ,  { headers: { Authorization: `Bearer ${token}` } }
     );
       alert('Property posted successfully');
