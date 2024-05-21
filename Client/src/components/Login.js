@@ -70,7 +70,7 @@
 
 //   const handleLogin = async () => {
 //     try {
-//       const response = await axios.post('http://localhost:3001/users/login', { email, password });
+//       const response = await axios.post('https://rentify-server-z0rv.onrender.com/users/login', { email, password });
 //       localStorage.setItem('token', response.data.token);
 //       navigate('/properties');
 //     } catch (error) {
@@ -102,7 +102,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:3001/users/login', { email, password });
+      const response = await axios.post('https://rentify-server-z0rv.onrender.com/users/login', { email, password });
       const { token, user } = response.data;
 
       localStorage.setItem('token', token);
