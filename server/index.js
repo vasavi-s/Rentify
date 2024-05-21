@@ -24,6 +24,4 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true 
     });
   })
   .catch(error => console.error(error));
-app.get("/", (req,res)=>{
-  res.json("hello");
-})
+
