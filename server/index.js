@@ -15,7 +15,9 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/users', userRoutes);
 app.use('/properties', auth, propertyRoutes);
-
+app.get("/", (req,res)=>{
+  res.json("hello");
+})
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log('Connected to MongoDB');
