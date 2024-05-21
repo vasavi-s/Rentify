@@ -23,7 +23,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
-      await axios.post('http://localhost:3001/users/register', form);
+      await axios.post('https://rentify-server-z0rv.onrender.com/users/register', form);
       navigate('/login');
     } catch (error) {
       console.error(error.response.data);
