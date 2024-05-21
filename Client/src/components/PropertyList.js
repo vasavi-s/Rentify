@@ -79,7 +79,7 @@ const PropertyList = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/properties', {
+        const response = await axios.get('https://rentify-server-z0rv.onrender.com/properties', {
           headers: {
             Authorization: localStorage.getItem('token')
           }
@@ -95,7 +95,7 @@ const PropertyList = () => {
 
   const handleInterest = async (id) => {
     try {
-      await axios.post(`http://localhost:3001/properties/${id}/interest`, {}, {
+      await axios.post(`https://rentify-server-z0rv.onrender.com/properties/${id}/interest`, {}, {
         headers: {
           Authorization: localStorage.getItem('token')
         }
